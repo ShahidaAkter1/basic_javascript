@@ -1,0 +1,26 @@
+/**
+ * Write a function findOddSum() that will take the array [5,7,8,10,45,30] as the input parameter and return the sum of the odd numbers.
+ */
+
+
+//
+// function findOddSum(numbers){
+//     console.log(numbers);
+// }
+// const myNumbers = [12,43,56,91,23,65];
+// findOddSum(myNumbers);
+
+function getSumOfAnArray(numbers){
+    let sum=0;
+
+    for(let i=0; i< numbers.length; i++){
+        const index = i;
+        const element = numbers[index];
+        sum= sum + element;
+        console.log(index,element,sum);
+    }
+    return sum;
+}
+
+const myNumbers = [12,34,56,76,89,91,23];
+getSumOfAnArray(myNumbers);
